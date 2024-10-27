@@ -1,4 +1,4 @@
-const text = ["Hi I'm Karthikeyan", "Aspiring FAANG Engineer"];
+const text = ["Karthikeyan", "An Aspiring FAANG Engineer"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -15,6 +15,8 @@ let letter = "";
     if (letter.length === currentText.length) {
         count++;
         index = 0;
+        setTimeout(type, 1000); // Adds a pause before switching to the next text
+    } else {
+        setTimeout(type, 150);
     }
-    setTimeout(type, 200);
 })();
