@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -10,69 +10,89 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
 }
 
 .container {
     display: flex;
     width: 90%;
     max-width: 1000px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .sidebar {
     width: 30%;
-    background-color: #2a2a72;
+    background: #33415c;
     color: #ffffff;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.sidebar h2 {
-    margin-bottom: 10px;
+.sidebar-content h2 {
     font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f2c94c;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
 }
 
-.sidebar p {
+.sidebar-content p, .sidebar-content a {
     margin-bottom: 8px;
-    line-height: 1.5;
-}
-
-.content {
-    width: 70%;
-    padding: 20px;
-    color: #333333;
-}
-
-.content h1 {
-    font-size: 2rem;
-    color: #2a2a72;
-    margin-bottom: 10px;
-}
-
-.content p {
-    margin-bottom: 12px;
-}
-
-.summary, .experience, .education {
-    margin-top: 20px;
-}
-
-.summary h2, .experience h2, .education h2 {
-    font-size: 1.5rem;
-    color: #2a2a72;
-    margin-bottom: 10px;
-}
-
-.content p strong {
-    color: #2a2a72;
+    line-height: 1.6;
+    color: #ffffff;
 }
 
 a {
-    color: #ffffff;
+    color: #f2c94c;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.content {
+    width: 70%;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.content h1 {
+    font-size: 2.2rem;
+    color: #33415c;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #5b7083;
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    font-size: 1.6rem;
+    color: #33415c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cfdef3;
+    padding-bottom: 5px;
+}
+
+.content p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.content p strong {
+    color: #33415c;
+    font-weight: 600;
+}
+
+.summary, .experience, .education {
+    margin-top: 20px;
 }
