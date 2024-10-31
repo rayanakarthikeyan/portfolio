@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@ body {
     margin: auto;
 }
 
+/* Header Section */
 header {
     text-align: center;
     padding: 60px 0;
@@ -25,6 +27,8 @@ header {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #4CAF50; /* Professional green for main title */
+    font-weight: bold;
 }
 
 header p {
@@ -32,6 +36,7 @@ header p {
     margin-bottom: 20px;
 }
 
+/* Button Styling */
 .buttons {
     display: flex;
     justify-content: center;
@@ -41,16 +46,17 @@ header p {
 .btn {
     text-decoration: none;
     padding: 10px 25px;
-    background-color: #d60000;
+    background-color: #4CAF50;
     color: #fff;
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .btn:hover {
-    background-color: #ff0000;
+    background-color: #45A049; /* Slightly darker green on hover */
 }
 
+/* Section Styling */
 section {
     padding: 50px 0;
     text-align: center;
@@ -59,9 +65,10 @@ section {
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #d60000;
+    color: #4CAF50; /* Green color for all section headings */
 }
 
+/* List and Item Styling */
 ul {
     list-style: none;
     padding: 0;
@@ -75,6 +82,7 @@ ul li {
     color: #fff;
 }
 
+/* Experience and Education Sections */
 .experience-item, .education-item {
     background-color: #333;
     padding: 15px;
@@ -83,10 +91,10 @@ ul li {
 }
 
 .experience-item h3, .education-item h3 {
-    color: #d60000;
-    margin-bottom: 5px;
+    color: #4CAF50;
 }
 
+/* Contact Section Styling */
 .contact-info p {
     font-size: 1.1em;
     margin: 10px 0;
@@ -99,5 +107,5 @@ ul li {
 
 .contact-info i {
     margin-right: 10px;
-    color: #d60000;
+    color: #4CAF50; /* Icon color for contact info */
 }
