@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
     margin: auto;
 }
 
-/* Header Section */
 header {
     text-align: center;
     padding: 60px 0;
@@ -26,16 +25,20 @@ header {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #4CAF50; /* Professional green for main title */
+    color: #d60000; /* Red theme */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 .typing {
     font-weight: bold;
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color: #ccc;
 }
 
-/* Button Styling */
 .buttons {
     display: flex;
     justify-content: center;
@@ -45,17 +48,18 @@ header p {
 .btn {
     text-decoration: none;
     padding: 10px 25px;
-    background-color: #4CAF50;
+    background-color: #d60000;
     color: #fff;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .btn:hover {
-    background-color: #45A049; /* Slightly darker green on hover */
+    background-color: #ff0000;
+    transform: scale(1.05);
 }
 
-/* Section Styling */
 section {
     padding: 50px 0;
     text-align: center;
@@ -64,10 +68,10 @@ section {
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #4CAF50; /* Green color for all section headings */
+    color: #d60000; /* Red theme for section headings */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* List and Item Styling */
 ul {
     list-style: none;
     padding: 0;
@@ -79,21 +83,24 @@ ul li {
     border-radius: 5px;
     margin: 5px 0;
     color: #fff;
+    font-weight: 500;
 }
 
-/* Experience and Education Sections */
 .experience-item, .education-item {
     background-color: #333;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
+    color: #ccc;
 }
 
 .experience-item h3, .education-item h3 {
-    color: #4CAF50;
+    color: #d60000; /* Red theme */
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
 }
 
-/* Contact Section Styling */
 .contact-info p {
     font-size: 1.1em;
     margin: 10px 0;
@@ -102,9 +109,10 @@ ul li {
 .contact-info a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .contact-info i {
     margin-right: 10px;
-    color: #4CAF50; /* Icon color for contact info */
+    color: #d60000;
 }
