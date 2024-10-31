@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -27,11 +28,27 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Gradient Text Effect */
+header h1 .typing {
+    background: linear-gradient(90deg, #d60000, #ff6600, #ffcc00, #66ff66, #0099ff, #d60000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorTransition 5s infinite;
+    font-weight: bold;
+}
+
+@keyframes colorTransition {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 header p {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
 
+/* Button Styling */
 .buttons {
     display: flex;
     justify-content: center;
@@ -51,6 +68,7 @@ header p {
     background-color: #ff0000;
 }
 
+/* Section Styling */
 section {
     padding: 50px 0;
     text-align: center;
@@ -64,18 +82,31 @@ h2 {
 
 ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    padding: 0;
 }
 
-li {
+ul li {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* Experience and Education Sections */
+.experience-item, .education-item {
+    background-color: #333;
+    padding: 15px;
+    margin: 10px 0;
     border-radius: 5px;
 }
 
+.experience-item h3, .education-item h3 {
+    color: #d60000;
+    margin-bottom: 5px;
+}
+
+/* Contact Section Styling */
 .contact-info p {
     font-size: 1.1em;
     margin: 10px 0;
