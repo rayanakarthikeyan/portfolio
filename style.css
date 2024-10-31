@@ -8,12 +8,19 @@
 body {
     background-color: #111;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 header {
@@ -25,18 +32,21 @@ header {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #d60000; /* Red theme */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-header h1 .typing {
     font-weight: bold;
+    color: #d60000;
+    animation: slideIn 1.5s ease-out;
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #ccc;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 .buttons {
@@ -53,6 +63,12 @@ header p {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s, transform 0.3s;
+    animation: bounce 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
 }
 
 .btn:hover {
@@ -68,42 +84,64 @@ section {
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #d60000; /* Red theme for section headings */
+    color: #d60000;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); color: #d60000; }
+    50% { transform: scale(1.05); color: #ff0000; }
 }
 
 ul {
     list-style: none;
     padding: 0;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 ul li {
     background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
     color: #fff;
     font-weight: 500;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
 }
 
 .experience-item, .education-item {
     background-color: #333;
-    padding: 15px;
+    padding: 20px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 .experience-item h3, .education-item h3 {
-    color: #d60000; /* Red theme */
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    color: #d60000;
+    margin-bottom: 8px;
     font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .contact-info p {
     font-size: 1.1em;
     margin: 10px 0;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .contact-info a {
@@ -115,4 +153,9 @@ ul li {
 .contact-info i {
     margin-right: 10px;
     color: #d60000;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
