@@ -33,7 +33,7 @@ header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #d60000;
+    color: white;
     animation: slideIn 1.5s ease-out;
 }
 
@@ -132,7 +132,7 @@ ul li:hover {
 }
 
 .experience-item h3, .education-item h3 {
-    color: #d60000;
+    color: white;
     margin-bottom: 8px;
     font-weight: 600;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
